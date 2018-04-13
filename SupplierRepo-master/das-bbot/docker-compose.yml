@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  db:
+    image: postgres:9.3.20
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=admin
+    ports:
+     - "5432:5432"
+  supplier:
+    image: supplier/supplier-command
+    depends_on:
+      - db
+      - rabbitmq
+    ports:
+      - "8090:8090"
+  
+
