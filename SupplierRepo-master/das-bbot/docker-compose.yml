@@ -12,7 +12,6 @@ services:
     image: supplier/supplier-command
     depends_on:
       - db
-      - rabbitmq
     ports:
       - "8090:8090"
   

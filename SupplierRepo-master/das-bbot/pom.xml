@@ -77,7 +77,7 @@
                         </resource>
                     </resources>
                 </configuration>
-				<!-- <executions>
+				<executions>
 					<execution>
 						<id>build</id>
 						<phase>install</phase>
@@ -85,7 +85,7 @@
 							<goal>build</goal>
 						</goals>
 					</execution>
-				</executions> -->
+				</executions> 
 			</plugin>
 		</plugins>
 	</build>
